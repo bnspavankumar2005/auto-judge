@@ -4,7 +4,7 @@
 [![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.4-orange?logo=scikitlearn&logoColor=white)](https://scikit-learn.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-App-red?logo=streamlit&logoColor=white)](https://streamlit.io/)
 
-## 📝 Overview
+## Overview
 AlgoDifficulty AI is a specialized Machine Learning framework designed to quantify the complexity of competitive programming problems. By utilizing Natural Language Processing (NLP) and supervised learning, the system automates the categorization of technical problem statements into standardized difficulty tiers (Easy, Medium, Hard) and predicts a continuous difficulty score.
 
 
@@ -22,21 +22,20 @@ The system employs a dual-stream feature extraction strategy to capture both sem
 ### 2. Model Benchmarking & Selection
 We evaluated several architectures to balance interpretability with predictive power:
 * **Classification**: Logistic Regression, Linear SVM, XGBoost, and Random Forest.
-* **Regression**: Ridge Regression and Random Forest Regressor.
+* **Regression**: Ridge Regression, linear regression, XGBoost regressor and Random Forest Regressor.
 
 **Winner**: **Random Forest** was selected for production due to its ability to handle non-linear feature interactions (e.g., the intersection of specific keywords with large numerical constraints).
 
 
 
-## 📊 Performance Metrics
+## Deployment & Usage
 
-| Metric | Result | Insight |
-| :--- | :--- | :--- |
-| **Accuracy** | **56%** | High performance given the subjective nature of difficulty. |
-| **Hard Class Recall** | **82%** | Exceptional ability to identify complex problems correctly. |
-| **Mean Absolute Error (MAE)** | **1.68** | Predicted scores deviate by less than 1.7 points on average. |
+###  Project Demo
+Click the image below to watch the video demonstration of the **AlgoDifficulty AI** in action:
 
-## 🚀 Deployment & Usage
+[![AlgoDifficulty AI Demo](https://img.shields.io/badge/Demo-Watch%20Video-red?style=for-the-badge&logo=google-drive)](https://drive.google.com/drive/folders/1WhkEIMqHTLkZ1ze-z47YvZ7iXg2EG9dv?usp=sharing)
+
+---
 
 ### Local Execution
 1.  **Clone the Repository**:
@@ -46,7 +45,7 @@ We evaluated several architectures to balance interpretability with predictive p
     ```
 2.  **Install Environment**:
     ```bash
-    pip install -r requirements.txt
+    pip install -r 
     ```
 3.  **Launch Web Interface**:
     ```bash
