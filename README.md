@@ -38,6 +38,12 @@ Click the image below to watch the video demonstration of the **AlgoDifficulty A
 ---
 
 ### Local Execution
+To get the project running locally, follow these steps:
+
+### Prerequisites
+- Python 3.8+
+- Recommended packages: `scikit-learn`, `pandas`, `numpy`, `jupyter`, `streamlit`
+
 1.  **Clone the Repository**:
     ```bash
     git clone [https://github.com/yourusername/algodifficulty-ai.git](https://github.com/yourusername/algodifficulty-ai.git)
@@ -52,11 +58,19 @@ Click the image below to watch the video demonstration of the **AlgoDifficulty A
     streamlit run app.py
     ```
 
-### Repository Structure
-```text
-├── app.py                # Production Streamlit UI & Inference Pipeline
-├── training_logic.ipynb  # Documented Research & Development phase
-├── best_classifier.pkl   # Serialized Random Forest Classifier
-├── best_regressor.pkl    # Serialized Random Forest Regressor
-├── tfidf_vectorizer.pkl  # Serialized TF-IDF Processor
-└── requirements.txt      # Dependency specification
+---
+
+## Repository Structure
+A clear overview of the key components included in this project:
+
+| File Name | Description |
+| :--- | :--- |
+| **`23116023_auto_judge_model.ipynb`** | Primary Jupyter Notebook containing data exploration, model development, training, and evaluation. |
+| **`AUTO_JUDGE_REPORT.pdf`** | Comprehensive project report detailing the methodology, experiments, and final results. |
+| **`README.md`** | The "instruction manual" for the repository, communicating project behavior and setup. |
+| **`app.py`** | The inference script used to deploy the model or provide a user interface for predictions. |
+| **`best_classifier.pkl`** | Serialized best-performing classification model saved in pickle format. |
+| **`best_regressor.pkl`** | Serialized best-performing regression model (if applicable) for secondary scoring. |
+| **`tfidf_vectorizer.pkl`** | The saved TF-IDF vectorizer used to transform raw text into numerical features for the model. |
+
+---
